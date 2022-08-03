@@ -23,11 +23,18 @@ const Restaurant = () =>
 
             const idata=event.target.value.toLowerCase();
             console.log(idata)
+            
+            
+            // console.log(idata)
+            // console.log("idate",idata)
             let x=[];
-            x=Menu.filter((data) => { return data.category.search(idata)!==-1;})
-               
+      
+            x=Menu.filter((data) => { return ((data.name.toLowerCase()).search(idata)!==-1)})
+       
+              console.log("x",x)
               
               setMenuData(x);
+            
               
             
 
@@ -43,14 +50,14 @@ const Restaurant = () =>
                         
                         <button className='btn-group__item' onClick={ () => filterItem("Breakfast")}>Breakfast</button>
                         <button className='btn-group__item' onClick={ () => filterItem("lunch")}>lunch</button>
-                        <button className='btn-group__item' onClick={ () => filterItem("dinner")}>dinner</button>
+                        <button className='btn-group__item' onClick={ () => filterItem("Dinner")}>dinner</button>
                         <button className='btn-group__item' onClick={ () => setMenuData(Menu)}>All</button>
 
                       </div>
                       
                       </nav>
                 
-                  
+               
               <MenuCard a={menuData} />
               </div>
         

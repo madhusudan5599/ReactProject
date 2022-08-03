@@ -1,12 +1,12 @@
 import React from 'react'
 
 const MenuCard = ({a}) => {
-    // console.log(a)
   return (
     <>  
       <section className="main-card--container">
         {
         a.map((curElem) => {
+          console.log(curElem.image);
           return (
               <>
               <div className='card-container' key={curElem.id}>
@@ -19,8 +19,8 @@ const MenuCard = ({a}) => {
                             
                             <div className='card-read'>Read</div>
                     </div>
-                  <img src={curElem.image} alt="Madhu" className='card-media'/> 
-    
+                  <img src={curElem.image} alt="menuImages" className='card-media'/> 
+                  
                     <span className="card-tag subtle">Order</span>
               </div>
           </div>
