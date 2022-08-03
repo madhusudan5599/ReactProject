@@ -24,7 +24,7 @@ const Restaurant = () =>
             const idata=event.target.value.toLowerCase();
             console.log(idata)
             let x=[];
-            x=Menu.filter((data) => { return data.category.search(idata)!=-1;})
+            x=Menu.filter((data) => { return data.category.search(idata)!==-1;})
                
               
               setMenuData(x);
