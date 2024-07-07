@@ -1,7 +1,7 @@
 {
     "name": "reactfirstapp",
     "version": "0.1.0",
-    "private": true,
+    "private": false,
     "homepage": "https://madhusudan5599.github.io/ReactProject",
     "dependencies": {
         "@testing-library/jest-dom": "^5.16.4",
